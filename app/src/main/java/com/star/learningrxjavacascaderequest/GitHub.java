@@ -13,10 +13,12 @@ public interface GitHub {
     @GET(PATH)
     Observable<List<Contributor>> contributors(
             @Path("owner") String owner,
-            @Path("repo") String repo);
+            @Path("repo") String repo
+    );
 
     @GET(PATH)
     Observable<List<HtmlUrl>> htmlUrls(
             @Path("owner") String owner,
-            @Path("repo") String repo);
+            @Path("repo") String repo
+    );
 }
